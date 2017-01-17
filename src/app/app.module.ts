@@ -10,6 +10,7 @@ import { FooterComponent } from './footer/footer.component';
 import { SellerComponent } from './seller/seller.component';
 import { PurchaserComponent } from './purchaser/purchaser.component';
 import { HomeComponent } from './home/home.component';
+import { RegisterComponent } from './register/register.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { HomeComponent } from './home/home.component';
     FooterComponent,
     SellerComponent,
     PurchaserComponent,
-    HomeComponent
+    HomeComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
@@ -28,7 +30,8 @@ import { HomeComponent } from './home/home.component';
     RouterModule.forRoot([
     {path:"home",component:HomeComponent},
     {path:"seller",component:SellerComponent},
-    {path:"purchaser",component:PurchaserComponent}
+    {path:"purchaser",component:PurchaserComponent},
+    {path:"register",component:RegisterComponent}
     ])
   ],
   providers: [],
